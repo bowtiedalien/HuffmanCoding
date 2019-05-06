@@ -8,7 +8,7 @@ characters that repeat most often. So if I have a file that contains this senten
 repeated character here is "u" so instead of giving it the usual 8-bit string that the computer assigns automatically to char variables in C++,
 we might give it a 4-bit string, for example. Hence shortening our total bit strings significantly. 
 
-<h2> How are the bit strings assigned? </h2>
+<h3> How are the bit strings assigned? </h3>
 By building what's called a Huffman Tree. The bottom-most nodes of the tree are the letters and their frequencies inside
 the text file. After construction, we traverse the tree from the top-most node. If we jump to a right-node, we concatenate '1' to our bit string;
 if we jump to a left-node, we concatenate '0' to our bit string. Thereby forming our bit strings for each letter as we reach it. The most frequently repeated letters 
