@@ -15,13 +15,15 @@ if we jump to a left-node, we concatenate '0' to our bit string. Thereby forming
 are at the top of the tree, while the least frequent are at the bottom. 
 
 <h2> What does this program do? </h2>
-1. reads text file
-2. calculates frequency of each letter in the text file and stores it all in a freqArray
-3. creates nodes grouping the frequencies and the characters and stores them in a priority queue
-4. constructs huffman tree using the priority queue
-5. outputs uncompressed codes of the characters in the file
-6. calculates and outputs compressed version
-7. compares between size of compressed file and size of uncompressed file
+<ol>
+  <li> reads text file</li>
+  <li> calculates frequency of each letter in the text file and stores it all in a freqArray</li>
+  <li> creates nodes grouping the frequencies and the characters and stores them in a priority queue </li>
+  <li> constructs huffman tree using the priority queue </li>
+  <li> outputs uncompressed codes of the characters in the file </li>
+  <li> calculates and outputs compressed version </li>
+  <li> compares between size of compressed file and size of uncompressed file </li>
+  </ol>
 
 <h3> notes: </h3>
   -I have attached a drawing of the final composition of my tree as a .png file. You might find it is easier to follow the code with 
